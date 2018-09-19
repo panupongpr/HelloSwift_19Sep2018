@@ -10,10 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var helloLabel: UILabel!
+    
+    
+    //Explicit
+    
+    let nameString: String = "Doramon"
+    
+    
+    
+    @IBAction func changeLabelButton(_ sender: Any) {
+        
+        print("You Click Button")
+        helloLabel.text = nameString
+    }// ChangeLabel
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+    } // Main Method
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -21,5 +39,5 @@ class ViewController: UIViewController {
     }
 
 
-}
+} // Main Class
 
